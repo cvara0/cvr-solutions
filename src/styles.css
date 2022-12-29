@@ -6,11 +6,15 @@ body{
    
     background-image: url("assets/images/fondocopado-vertical.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-size:cover;
   }
 
-  /*margenes*/
+  /*mostrar y ocultar contenido------------------------------------*/
+  
+  .hideContent{display: none;}
+
+  .showContent{display:block;}
+
   /*margenes*/
 .mt-xs { margin-top: .25em; }
 .mt-sm { margin-top: .5em; }
@@ -21,12 +25,12 @@ body{
 
 /*cambia tamanio---------------------------------------------------------------------------------*/
 .change-size-1{
-    transition: width 1s, height 1s;
+    transition: width 0.4s, height 0.4s;
   }
   .change-size-1:hover{
     filter: saturate(200%);
-    width: 128px; 
-    height:128px;
+    width: 96px; 
+    height:96px;
   }
 /*texto neon----------------------------------------------------------------------------------------*/
 .neonText {
@@ -59,14 +63,12 @@ body{
 
   /*circulo neon-----------------------------------------------------------------------------------------*/
   .neonCircleImage {
-
+    margin: auto;
     width: 64px;
     height: 64px;
-    margin: auto;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
     border-radius: 50%;
-    background-size: contain;
+    background-size: cover;
     
     box-shadow: 
     0 0 6px rgb(255, 170, 0),
@@ -224,7 +226,7 @@ body{
   transform: scale(.94);
 }
 
-/* transiciones al argar la pag*/
+/* transiciones al cargar la pag----------------------------------------------------*/
 .animated {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
@@ -297,6 +299,23 @@ body{
       opacity: 1;
     }
   }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+
   .zoomIn {
     animation-name: zoomIn;
   }
@@ -318,4 +337,19 @@ body{
   
   .zoomOut {
     animation-name: zoomOut;
+  }
+
+  @keyframes fadeOutUp {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+  
+  .fadeOutUp {
+    animation-name: fadeOutUp;
   }

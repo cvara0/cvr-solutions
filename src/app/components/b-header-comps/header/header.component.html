@@ -1,6 +1,12 @@
 <header class="row mt-xl">
-    <app-circle-m icon_name="software_icon_128.png" class="col-4"></app-circle-m>
-    <app-circle-b class="col-4"></app-circle-b>
-    <app-circle-m icon_name="design_icon_128.png" class="col-4"></app-circle-m>
-   
+    <div class="col-1 animated zoomIn">
+        <app-circle-m (click)="showSoftSection()" icon_name="software_icon_128.png"></app-circle-m>
+    </div>
+    <div class="col-10">
+        <app-circle-b ></app-circle-b>
+    </div>
+    <div class="col-1 animated zoomIn">
+        <app-circle-m icon_name="design_icon_128.png" class="col-4"></app-circle-m>
+    </div>
 </header>
+<app-main-soft class="{{this.transStyle1}} animated {{this.listStyle}}"></app-main-soft>
