@@ -9,8 +9,11 @@ import { CircleMComponent } from './components/e-other-comps/circle-m-comp/circl
 import { CircleSComponent } from './components/e-other-comps/circle-s-comp/circle-s/circle-s.component';
 import { CircleBComponent } from './components/e-other-comps/circle-b-comp/circle-b/circle-b.component';
 import { MainSoftComponent } from "./components/c-main-comps/main-soft-comp/main-soft.component";
+import { MainDesignComponent } from "./components/c-main-comps/main-design-comp/main-design/main-design.component";
 import { MainWebComponent } from './components/c-main-comps/main-soft-comp/main-web-comp/main-web/main-web.component';
 import { MainMobileComponent } from './components/c-main-comps/main-soft-comp/main-mobile-comp/main-mobile/main-mobile.component';
+import { MainIndustrialComponent } from './components/c-main-comps/main-design-comp/main-design/main-industrial-comp/main-industrial/main-industrial.component';
+import { SquareOteComponent } from './components/e-other-comps/square-ote-comp/square-ote/square-ote.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +26,10 @@ import { MainMobileComponent } from './components/c-main-comps/main-soft-comp/ma
         CircleBComponent,
         MainSoftComponent,
         MainWebComponent,
-        MainMobileComponent
+        MainMobileComponent,
+        MainDesignComponent,
+        MainIndustrialComponent,
+        SquareOteComponent
     ],
     providers: [],
     bootstrap: [AppComponent],

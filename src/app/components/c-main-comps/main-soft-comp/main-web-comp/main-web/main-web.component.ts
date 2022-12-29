@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageOte } from 'src/app/models/imageOte.models';
 
 @Component({
   selector: 'app-main-web',
@@ -6,7 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainWebComponent implements OnInit {
 
-  constructor() { }
+  imagesOteList:ImageOte[]=[];
+
+  constructor() {
+
+    this.imagesOteList=[
+      new ImageOte('assets/images/cvr_icon_128.png'),
+      new ImageOte('assets/images/cvr_icon_128.png'),
+      new ImageOte('assets/images/cvr_icon_128.png'),
+      new ImageOte('assets/images/cvr_icon_128.png'),
+      new ImageOte('assets/images/cvr_icon_128.png'),
+      new ImageOte('assets/images/cvr_icon_128.png'),
+      new ImageOte('assets/images/cvr_icon_128.png')
+
+    ]
+   }
 
   ngOnInit(): void {
   }

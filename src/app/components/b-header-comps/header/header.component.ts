@@ -8,12 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  listStyle    : string='hideContent';
-  transStyle1    : string='fadeInDown';
-  transStyle2    : string='fadeInRightBig';
-  isShow       : boolean=false;
+  listStyle1    : string='hideContent';
+  transStyle1    : string='';
+  isShow1      : boolean=false;
 
-  sectionToShow: string='';
+  listStyle2    : string='hideContent';
+  transStyle2    : string='';
+  isShow2      : boolean=false;
 
   constructor() { }
 
@@ -22,26 +23,42 @@ export class HeaderComponent implements OnInit {
 
   
   showSoftSection(){
-    this.transStyle1 ='fadeInDown';
-    if(!this.isShow){
-      this.listStyle="showContent";
-      this.isShow=!this.isShow;
+    this.hideDesignSection(0);
+    this.transStyle1 ='zoomIn';
+    if(!this.isShow1){
+      this.listStyle1="showContent";
+      this.isShow1=true;
     }
     else
-      this.hideSoftSection();
+      this.hideSoftSection(1000);
   }
 
-  hideSoftSection(){
-    this.isShow=!this.isShow;
-    this.transStyle1 ='fadeOutUp';
+  hideSoftSection(time:number){
+    this.isShow1=false;
+    this.transStyle1 ='zoomOut';
     
-    setTimeout(() => {this.listStyle="hideContent";}, 1000);
+    setTimeout(() => {this.listStyle1="hideContent";}, time);
   }
   
-  showDesignSection(){}
-  hideDesignSection(){}
+  showDesignSection(){
+    this.hideSoftSection(0);
+    this.transStyle2 ='zoomIn';
+    if(!this.isShow2){
+      this.listStyle2="showContent";
+      this.isShow2=true;
+    }
+    else
+      this.hideDesignSection(1000);
+  }
 
-  /* todo hace un main para soft y para desig luego un section para apps moviles y web */
+  hideDesignSection(time:number){
+    this.isShow2=false;
+    this.transStyle2 ='zoomOut';
+    
+    setTimeout(() => {this.listStyle2="hideContent";}, time);
+  }
+
+
   
 
 }

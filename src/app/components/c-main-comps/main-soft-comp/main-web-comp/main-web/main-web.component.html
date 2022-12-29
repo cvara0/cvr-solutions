@@ -1,1 +1,10 @@
-<p>main-web works!</p>
+<main class="container">
+    <h1 class="mt-md neonText text-title-1 animated zoomIn">desarrollo web</h1>
+    <hr class="neon-line animated zoomIn">
+    <section class="row justify-content-center mt-lg">
+        <div class="col-3" *ngFor="let item of this.imagesOteList">
+            <app-square-ote [image_route]="item.imageUrl"></app-square-ote>
+        </div>
+        
+    </section>
+</main>

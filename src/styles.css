@@ -63,6 +63,7 @@ body{
 
   /*circulo neon-----------------------------------------------------------------------------------------*/
   .neonCircleImage {
+    display: block;
     margin: auto;
     width: 64px;
     height: 64px;
