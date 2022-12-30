@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CircleMComponent implements OnInit {
 
-  @Input() icon_name:string="";
+  @Input() imgRoute:string="";
 
   constructor() { }
 

@@ -13,7 +13,9 @@ import { MainDesignComponent } from "./components/c-main-comps/main-design-comp/
 import { MainWebComponent } from './components/c-main-comps/main-soft-comp/main-web-comp/main-web/main-web.component';
 import { MainMobileComponent } from './components/c-main-comps/main-soft-comp/main-mobile-comp/main-mobile/main-mobile.component';
 import { MainIndustrialComponent } from './components/c-main-comps/main-design-comp/main-design/main-industrial-comp/main-industrial/main-industrial.component';
-import { SquareOteComponent } from './components/e-other-comps/square-ote-comp/square-ote/square-ote.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { InfoModalComponent } from './components/e-other-comps/info-modal-comp/info-modal/info-modal.component';
+
 
 @NgModule({
     declarations: [
@@ -29,13 +31,14 @@ import { SquareOteComponent } from './components/e-other-comps/square-ote-comp/s
         MainMobileComponent,
         MainDesignComponent,
         MainIndustrialComponent,
-        SquareOteComponent
+        InfoModalComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
         APP_ROUTING,
+        NgbModule,
         
     ]
 })

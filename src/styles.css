@@ -29,9 +29,19 @@ body{
   }
   .change-size-1:hover{
     filter: saturate(200%);
-    width: 96px; 
-    height:96px;
+    width: 92px; 
+    height:92px;
   }
+
+  .change-size-2{
+    transition: width 2s, height 2s;
+  }
+  .change-size-2:hover{
+    filter: saturate(200%);
+    width: 256px; 
+    height:256px;
+  }
+  
 /*texto neon----------------------------------------------------------------------------------------*/
 .neonText {
     color: #fff;
@@ -82,9 +92,29 @@ body{
       
   }
 
+  .neonSquadImage {
+    display: block;
+    margin: auto;
+    width: 128px;
+    height: 128px;
+    background-repeat: no-repeat;
+    border-radius: 64px;
+    background-size: cover;
+    
+    box-shadow: 
+    0 0 6px rgb(255, 170, 0),
+    0 0 10px rgb(0, 255, 0),
+    0 0 14px rgb(0, 255, 255),
+    0 0 16px rgb(0, 0, 255),
+    0 0 18px rgb(170, 0, 255),
+    0 0 22px rgb(255, 0, 255),
+    0 0 24px rgb(255, 128, 170);
+      
+  }
+
  /* pulso neon--------------------------------------------*/
  .neon-pulse{
-    animation: rainbow-bg 60s infinite alternate;
+    animation: rainbow-bg 50s infinite alternate;
   }
     @keyframes pulsate {
       
