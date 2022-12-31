@@ -1,19 +1,16 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-circle-m',
-  templateUrl: './circle-m.component.html',
+  selector: 'app-a-btn',
+  templateUrl: './a-btn.component.html',
   styles: [
   ]
 })
-export class CircleMComponent implements OnInit {
-
+export class ABtnComponent implements OnInit {
   @Input() imgRoute:string="";
-
   constructor() { }
 
   ngOnInit(): void {
   }
-  
 
 }

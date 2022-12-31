@@ -23,7 +23,7 @@ export class MainSoftComponent implements OnInit {
 
   showWebSection(){
     this.hideMobileSection(0);
-    this.transStyle1 ='zoomIn';
+    this.transStyle1 ='fadeInUp';
     if(!this.isShow1){
       this.listStyle1="showContent";
       this.isShow1=true;
@@ -41,7 +41,7 @@ export class MainSoftComponent implements OnInit {
   
   showMobileSection(){
     this.hideWebSection(0);
-    this.transStyle2 ='zoomIn';
+    this.transStyle2 ='fadeInUp';
     if(!this.isShow2){
       this.listStyle2="showContent";
       this.isShow2=true;

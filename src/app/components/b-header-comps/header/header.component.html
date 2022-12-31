@@ -2,17 +2,18 @@
     <section class="row justify-content-center mt-lg">
         <header class="row  mt-xl">
     <div class="col-1 col-sm-1 animated fadeInDown">
-        <app-circle-m (click)="showSoftSection()" imgRoute="assets/images/software_icon_128.png"></app-circle-m>
+        <app-a-btn (click)="showSoftSection()" imgRoute="assets/images/software_icon_128.png"></app-a-btn>
     </div>
     <div class="col-10 col-sm-10 animated zoomIn">
-        <app-circle-b></app-circle-b>
+        <app-c-btn></app-c-btn>
     </div>
     <div class="col-1 animated fadeInDown">
-        <app-circle-m (click)="showDesignSection()" imgRoute="assets/images/design_icon_128.png" class="col-4"></app-circle-m>
+        <app-a-btn (click)="showDesignSection()" imgRoute="assets/images/design_icon_128.png" class="col-4"></app-a-btn>
     </div>
 </header>
 
     <app-main-soft class="{{this.transStyle1}} animated {{this.listStyle1}}"></app-main-soft>
 
     <app-main-design class="{{this.transStyle2}} animated {{this.listStyle2}}"></app-main-design>
+    
 

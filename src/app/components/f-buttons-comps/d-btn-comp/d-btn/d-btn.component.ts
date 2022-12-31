@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-info-modal',
-  templateUrl: './info-modal.component.html',
+  selector: 'app-d-btn',
+  templateUrl: './d-btn.component.html',
   styles: [
   ]
 })
-export class InfoModalComponent implements OnInit {
+export class DBtnComponent implements OnInit {
 
   constructor() { }
 

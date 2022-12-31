@@ -1,0 +1,18 @@
+<figure (click)="open(infoModal)" class="{{this.transStyle2}} animated {{this.listStyle2}} neonSquadImage change-size-2" style="background-image: url({{this.imgRoute}});">
+
+</figure>
+
+<ng-template #infoModal let-modal>
+    <article class="row main-modal-style neon-pulse">
+       <a href="" target="_blank" style="outline: none;">
+            <figure class="modal-figure change-size-3" style="background-image: url('assets/images/inventivo_icon.png');"></figure>
+       </a>
+        <h2 class="neonText mt-sm">NOMBRE EMPRENDIMIENTO</h2>
+        <h4 class="neonText mt-sm">descripcion breve</h4>
+        <p class="neonText mt-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Possimus beatae magni, animi eveniet, deleniti delectus rerum 
+            veritatis aperiam dolor voluptatibus adipisci nobis eum ea consectetur 
+            magnam quidem optio, quaerat repellat.</p>
+       
+    </article>
+</ng-template>
