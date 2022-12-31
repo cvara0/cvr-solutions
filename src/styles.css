@@ -407,6 +407,8 @@ body{
     animation-name: zoomIn;
   }
 
+  
+
   @keyframes zoomOut {
     from {
       opacity: 1;
