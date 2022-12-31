@@ -10,10 +10,10 @@ import { MainWebComponent } from './components/c-main-comps/main-soft-comp/main-
 import { MainMobileComponent } from './components/c-main-comps/main-soft-comp/main-mobile-comp/main-mobile/main-mobile.component';
 import { MainIndustrialComponent } from './components/c-main-comps/main-design-comp/main-design/main-industrial-comp/main-industrial/main-industrial.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { ABtnComponent } from './components/e-buttons-comps/a-btn-comp/a-btn/a-btn.component';
-import { BBtnComponent } from './components/e-buttons-comps/b-btn-comp/b-btn/b-btn.component';
-import { CBtnComponent } from './components/e-buttons-comps/c-btn-comp/c-btn/c-btn.component';
-import { DBtnComponent } from './components/f-buttons-comps/d-btn-comp/d-btn/d-btn.component';
+import { ABtnComponent } from './components/d-buttons-comps/a-btn-comp/a-btn/a-btn.component';
+import { BBtnComponent } from './components/d-buttons-comps/b-btn-comp/b-btn/b-btn.component';
+import { CBtnComponent } from './components/d-buttons-comps/c-btn-comp/c-btn/c-btn.component';
+import { DBtnComponent } from './components/d-buttons-comps/d-btn-comp/d-btn/d-btn.component';
 
 
 @NgModule({
